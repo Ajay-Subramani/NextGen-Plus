@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(32, 100%, 50%);
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.search-bar button {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.mic-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.mic-btn:hover {
+    background-color: #388e3c;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.skip-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.skip-btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.intro-text {
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.gender-option {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.gender-option:hover {
+    background-color: #444;
+}
+
+.age-select {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.age-select label {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.age-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+}
+
+.next-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.next-btn:hover {
+    background-color: #1565c0;
+}
+
+footer {
+    background-color: hsl(103, 100%, 50%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
