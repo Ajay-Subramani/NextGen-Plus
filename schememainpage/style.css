@@ -252,6 +252,63 @@ header {
     height: 40px;
 }
 
+/* Media Queries */
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+    .site-name {
+        font-size: 1.75rem;
+    }
+
+    .filter-container {
+        max-width: 400px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .site-name {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        flex-direction: row;
+    }
+
+    .filter-container {
+        max-width: 300px;
+    }
+
+    .state-central-grid {
+        flex-direction: row;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .site-name {
+        font-size: 2.25rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .site-name {
+        font-size: 2.5rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .site-name {
+        font-size: 2.75rem;
+    }
+}
+
+/* Additional media query for smaller screens */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
