@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(32, 100%, 50%);
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.selection-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.active-tab {
+    background-color: hsl(103, 100%, 50%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.scheme-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.scheme-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer {
+    background-color: hsl(103, 100%, 50%);
+    padding: 10px 20px;
+    text-align: center;
+    color: hsl(0, 0%, 0%);
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+    .site-name {
+        font-size: 2.25rem;
+    }
+
+    .tab-btn {
+        font-size: 1.3rem;
+    }
+
+    .scheme-btn {
+        font-size: 1.2rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .scheme-selection {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .site-name {
+        font-size: 2.5rem;
+    }
+
+    .tab-btn {
+        font-size: 1.4rem;
+    }
+
+    .scheme-btn {
+        font-size: 1.3rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .site-name {
+        font-size: 2.75rem;
+    }
+
+    .tab-btn {
+        font-size: 1.5rem;
+    }
+
+    .scheme-btn {
+        font-size: 1.4rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .site-name {
+        font-size: 3rem;
+    }
+
+    .tab-btn {
+        font-size: 1.6rem;
+    }
+
+    .scheme-btn {
+        font-size: 1.5rem;
+    }
+}
