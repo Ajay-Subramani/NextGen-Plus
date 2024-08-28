@@ -1,13 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #333;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,85 +30,253 @@ header {
 }
 
 .site-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-main {
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-grow: 1;
-}
-
-.language-selection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 20px;
+    position: relative;
 }
 
-.language-btn {
-    width: 10em;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid black;
-    color: white;
-    font-size: 1.5rem;
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.search-bar button {
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    text-shadow: 1px 1px 2px black;
-    background-color: #007bff;
+    padding: 10px;
 }
 
-#2 .language-btn { background-image: url('hindi.jpg'); }
-#3 .language-btn { background-image: url('malayalam.jpg'); }
-#4 .language-btn { background-image: url('english.jpg'); }
-#5 .language-btn { background-image: url('kannada.jpg'); }
-#6 .language-btn { background-image: url('oria.jpg'); }
-#7 .language-btn { background-image: url('marathi.jpg'); }
-#8 .language-btn { background-image: url('punjabi.jpg'); }
-#9 .language-btn { background-image: url('gujarati.jpg'); }
-#10 .language-btn { background-image: url('telugu.jpg'); }
-#11 .language-btn { background-image: url('kashmiri.jpg'); }
-#12 .language-btn { background-image: url('bengali.jpg'); }
-#13 .language-btn { background-image: url('assamese.jpg'); }
-#14 .language-btn { background-image: url('urdu.jpg'); }
-#15 .language-btn { background-image: url('konkani.jpg'); }
-#16 .language-btn { background-image: url('sanskrit.jpg'); }
+.search-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.mic-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.mic-btn:hover {
+    background-color: #388e3c;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.skip-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.skip-btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.intro-text {
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.gender-option {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.gender-option:hover {
+    background-color: #444;
+}
+
+.age-select {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.age-select label {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.age-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+}
+
+.next-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.next-btn:hover {
+    background-color: #1565c0;
+}
 
 footer {
-    background-color: hsl(103, 100%, 50%);
-    padding: 10px 20px;
+    background-color: hsl(146, 50%, 36%);
+    color: white;
     text-align: center;
-    color: hsl(0, 0%, 0%);
+    padding: 15px;
+    margin-top: auto;
 }
 
 .social-media a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 10px;
     font-size: 1rem;
 }
 
-@media (max-width: 600px) {
-    .language-selection {
-        grid-template-columns: repeat(2, 1fr);
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .site-name {
+        font-size: 1.8rem;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .search-bar {
+        max-width: 500px;
     }
 
-    .language-btn {
-        width: 100%;
+    .form-container {
+        max-width: 350px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .site-name {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        max-width: 700px;
+    }
+
+    .form-container {
+        max-width: 450px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .site-name {
+        font-size: 2.5rem;
+    }
+
+    .search-bar {
+        max-width: 800px;
+    }
+
+    .form-container {
+        max-width: 500px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .site-name {
+        font-size: 3rem;
+    }
+
+    .search-bar {
+        max-width: 900px;
+    }
+
+    .form-container {
+        max-width: 600px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .site-name {
+        font-size: 3.5rem;
+    }
+
+    .search-bar {
+        max-width: 1000px;
+    }
+
+    .form-container {
+        max-width: 700px;
     }
 }
